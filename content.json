@@ -80,7 +80,7 @@
       "room": "cocina",
       "object": "La radio",
       "number": "05",
-      "image": "assets/podcast-ep-1.webp",
+      "image": "assets/pod-ep-1.jpeg",
       "type": "series",
       "url": null,
       "youtubeId": null,
@@ -95,7 +95,7 @@
           "type": "youtube",
           "youtubeId": "_Qfb3CZEx3U",
           "url": "https://youtu.be/_Qfb3CZEx3U",
-          "image": "assets/podcast-ep-1.webp"
+          "image": "assets/pod-ep-1.jpeg"
         },
         {
           "id": "ep-2",
@@ -104,7 +104,7 @@
           "type": "youtube",
           "youtubeId": "53lYozWhwqk",
           "url": "https://youtu.be/53lYozWhwqk",
-          "image": "assets/podcast-ep-2.webp"
+          "image": "assets/pod-ep-2.jpeg"
         },
         {
           "id": "ep-3",
@@ -113,7 +113,7 @@
           "type": "youtube",
           "youtubeId": "KY5vfdY8BxA",
           "url": "https://youtu.be/KY5vfdY8BxA",
-          "image": "assets/podcast-ep-3.webp"
+          "image": "assets/pod-ep-3.jpeg"
         },
         {
           "id": "ep-4",
@@ -122,7 +122,7 @@
           "type": "youtube",
           "youtubeId": "gLvBOfHRjVM",
           "url": "https://youtu.be/gLvBOfHRjVM",
-          "image": "assets/podcast-ep-4.webp"
+          "image": "assets/pod-ep-4.jpeg"
         }
       ]
     },
