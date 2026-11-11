@@ -1,0 +1,26 @@
+import fs from 'node:fs/promises';
+let s=await fs.readFile('site/house.js','utf8');
+function replace(a,b){if(!s.includes(a))throw Error('Anchor missing: '+a.slice(0,90));s=s.replace(a,b);}
+replace("import * as THREE from './vendor/three.module.js';","import * as THREE from './vendor/three.module.js';\nimport {createDecor,batchStatic} from './decor.js';");
+replace('onRoom,onProject,onError,onInteract,onSelectStory','onRoom,onProject,onError,onInteract,onSelectStory,onEntrance');
+replace("const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});","const mobile=matchMedia('(pointer:coarse)').matches;\n  const renderer=new THREE.WebGLRenderer({antialias:!mobile,powerPreference:'high-performance'});");
+replace('renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));renderer.shadowMap.enabled=true;',"let pixelRatio=Math.min(devicePixelRatio,mobile?1.15:1.6);renderer.setPixelRatio(pixelRatio);renderer.shadowMap.enabled=true;renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;");
+replace("let active=false,paused=true,visible=true,frame=0,last=0,yaw=0,pitch=0,room='sala',route=[],routeLook=null,dirty=true,pointer=null,wheelSpeed=0;","let active=false,paused=true,visible=true,frame=0,last=0,yaw=0,pitch=0,room='sala',route=[],dirty=true,pointer=null,wheelSpeed=0;\n  let phase='closed',entrance=0,entryResolve,entryPromise,travelSpeed=0,lookTween=null,transition=null,lastProject=0,slowFrames=0;\n  let lookYaw=0,lookPitch=0,renderTimes=[];\n  const fade=document.createElement('div');fade.className='room-transition';fade.setAttribute('aria-hidden','true');container.append(fade);");
+const start=s.indexOf('  const artBase='),end=s.indexOf('  function book(',start);
+if(start<0||end<0)throw Error('decor anchors');
+s=s.slice(0,start)+"  const decor=createDecor({THREE,scene,mesh,box,rounded,cyl,sphere,material,mWood,mCream,mMetal,canvasTexture,V,redraw:()=>{dirty=true;renderer.shadowMap.needsUpdate=true;request();}});\n  const {art,plant}=decor;\n"+s.slice(end);
+replace('sun.shadow.mapSize.set(1024,1024)','sun.shadow.mapSize.set(mobile?512:1024,mobile?512:1024)');
+replace('wall(10,3.2,.16,0,1.6,6);',"wall(1.75,3.2,.16,-4.125,1.6,6);wall(6.75,3.2,.16,1.625,1.6,6);wall(1.5,.4,.16,-2.5,3,6);");
+replace("plant(-.42,.67,3.35,.45);box(.33,.1,.28,-.42,.72,1.45,'#c7b28c');","plant(-.42,0,.62,.72,true);plant(-.42,0,4.12,.72,true);box(.33,.1,.28,-.42,.72,1.45,'#c7b28c');");
+replace("const runner=box(.45,.012,2.25,2.8,.977,2.85,'#c6b797');runner.castShadow=false;","decor.tableRunner();");
+replace("cyl(.16,.11,.23,2.8,1.1,2.6,'#a37950');plant(2.8,.99,2.6,.45);","decor.flowerVase(2.8,.99,2.6);");
+const kettleStart=s.indexOf('  const kettle=sphere'),kettleEnd=s.indexOf('  const island=',kettleStart);
+if(kettleStart<0||kettleEnd<0)throw Error('kitchen anchors');
+s=s.slice(0,kettleStart)+'  decor.kitchenFixtures();\n'+s.slice(kettleEnd);
+const laptopStart=s.indexOf("  box(.43,.025,.4,-2.05"),laptopEnd=s.indexOf('  book(-1.45',laptopStart);
+if(laptopStart<0||laptopEnd<0)throw Error('laptop anchors');
+s=s.slice(0,laptopStart)+'  decor.laptop();\n'+s.slice(laptopEnd);
+const doorStart=s.indexOf('  // An entry door'),navStart=s.indexOf('  // Navigation',doorStart);
+s=s.slice(0,doorStart)+"  const door=decor.entryDoor();plant(4.4,0,5.15,1.02,true);\n  batchStatic(THREE,scene);\n"+s.slice(navStart);
+await fs.writeFile('site/house.js',s);
+console.log('Model geometry updated.');

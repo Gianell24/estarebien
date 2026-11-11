@@ -1,0 +1,12 @@
+
+10K Websites check
+
+Nothing to fix.
+
+NOTES:
+- No scroll hero on the home page.
+- Phone 390x844: No scroll hero.
+- Phone 375x812: No scroll hero.
+- Phone 375x667: No scroll hero.
+
+Look at review/contact-sheet.png, the phone-contact-sheet-*.png files (including every transition), phone-top.png and phone.png. Automatic checks cannot judge whether the subject is composed well in each crop.

@@ -1,0 +1,151 @@
+{
+  "project": "Estaré bien",
+  "producer": "Ruway Producciones",
+  "email": "ruwayproducciones@gmail.com",
+  "youtube": "https://www.youtube.com/@Ruway2025",
+  "instagram": "https://www.instagram.com/elisaf_1998/",
+  "trailer": null,
+  "stories": [
+    {
+      "id": "videoclip",
+      "title": "Estoy bien",
+      "kind": "Videoclip",
+      "status": "Disponible",
+      "ready": true,
+      "room": "sala",
+      "object": "El televisor",
+      "number": "01",
+      "image": "assets/poster.webp",
+      "type": "youtube",
+      "url": "https://youtu.be/Ex5ZqdjARbQ",
+      "youtubeId": "Ex5ZqdjARbQ",
+      "excerpt": "Julián guarda una verdad que amenaza con cambiarlo todo. Aquí comienza la historia.",
+      "synopsis": "Julián pierde su trabajo y, en lugar de contárselo a Elisa, la mujer que ama, decide fingir que todo sigue igual. Cada noche responde ‘estoy bien’ a la pregunta de ella, mientras las deudas se acumulan, empeña lo único que le queda y esconde las pruebas en una caja. Pero una mentira que se sostiene con amor no puede durar para siempre: cuando Elisa descubre la verdad, lo que más le duele no son las deudas, sino darse cuenta de que él nunca confió en ella. Entre la luz cálida de ella y la frialdad de él, Julián tendrá que decidir si confesar o dejarla ir para protegerla de lo que él mismo es capaz de romper.",
+      "action": "Reproducir videoclip"
+    },
+    {
+      "id": "libro",
+      "title": "Mi familia y luego yo",
+      "kind": "Libro",
+      "status": "En desarrollo",
+      "ready": false,
+      "room": "sala",
+      "object": "El libro",
+      "number": "02",
+      "image": "assets/sala.webp",
+      "type": "flipbook",
+      "url": "https://heyzine.com/flip-book/06a8170dd5.html",
+      "excerpt": "Ramón intenta sostener a su familia mientras esconde lo que le está pasando.",
+      "synopsis": "Ramón es un joven padre de familia que logra ascender de a poco en su vida, consiguiendo un empleo estable, una esposa amorosa y un hijo al que quiere mucho. Lamentablemente todos sus sueños se ven truncados al quedar desempleado por una crisis económica fuera de sus manos. Por ello, Ramón hará hasta lo imposible para salir adelante, haciéndolo a escondidas para evitar preocupar a sus familiares.",
+      "action": "Leer el libro"
+    },
+    {
+      "id": "comic",
+      "title": "¿Me conoces?",
+      "kind": "Cómic",
+      "status": "En desarrollo",
+      "ready": false,
+      "room": "cuarto",
+      "object": "El cuaderno",
+      "number": "03",
+      "image": "assets/cuarto.webp",
+      "type": "flipbook",
+      "url": "https://heyzine.com/flip-book/57d228110f.html",
+      "excerpt": "Elisa descubre que ser necesaria para los demás no significa sentirse conocida.",
+      "synopsis": "Elisa, por miedo a quedarse sola, ha aprendido a anteponer las necesidades de sus amigos a las suyas, tolerando actitudes que la lastiman con tal de conservar su compañía. Sin embargo, cuando comienza a darse cuenta de que sus amistades la valoran más por lo que puede ofrecerles que por quien realmente es, se enfrenta a una dolorosa realidad: nadie parece conocerla de verdad. A través de esta experiencia, Elisa deberá confrontar las inseguridades que la acompañan desde la infancia y comprender que no necesita ser indispensable para los demás para merecer afecto.",
+      "action": "Leer el cómic"
+    },
+    {
+      "id": "instagram",
+      "title": "La cuenta de Elisa",
+      "kind": "Instagram",
+      "status": "Relato en desarrollo",
+      "ready": false,
+      "room": "comedor",
+      "object": "El teléfono",
+      "number": "04",
+      "image": "assets/comedor.webp",
+      "type": "link",
+      "url": "https://www.instagram.com/elisaf_1998/",
+      "excerpt": "Una vida aparentemente perfecta. Pequeños detalles que empiezan a contar otra cosa.",
+      "synopsis": "En la cuenta de Instagram de Elisa todo es bonito y ordenado: salidas, comidas, paisajes, frases de motivación y hasta la cena especial que le preparó a Julián. Nada hace pensar que algo anda mal. Pero con el tiempo aparecen detalles que no encajan: publicaciones a las 4:11 de la madrugada, fotos que se borran a los pocos minutos, textos largos que terminan reducidos a una sola palabra y comentarios que ella responde solo con un corazón. Poco a poco, sus historias mezclan fotos de un café o de la calle con mensajes que escribió de noche y nunca envió. Una vida perfecta y una confesión hecha entre lágrimas conviven en el mismo perfil, el mismo día. Cuando alguien por fin le pregunta si está bien, ella responde que sí, y después sube una última foto sin nada especial. Desde entonces, la cuenta deja de actualizarse, y nadie sabe por qué.",
+      "action": "Visitar el perfil"
+    },
+    {
+      "id": "podcast",
+      "title": "Estaré bien",
+      "kind": "Podcast",
+      "status": "4 episodios disponibles",
+      "ready": true,
+      "room": "cocina",
+      "object": "La radio",
+      "number": "05",
+      "image": "assets/podcast-ep-1.webp",
+      "type": "series",
+      "url": null,
+      "youtubeId": null,
+      "excerpt": "Antes de Elisa estuvo Esther. Y una frase que aprendió a decir demasiado pronto.",
+      "synopsis": "Esther no sabe que el día más doloroso de su vida también será el día que le enseñe a su hija cómo callar. Cuando la relación con el padre de Elisa llega a su fin, ambos se reúnen en un parque soleado mientras la pequeña juega entre las risas de otros niños. Allí, él anuncia con frialdad que esa será la última vez que las verá en persona y que, desde ahora, solo enviará la mensualidad por transferencia. Cuando se marcha, Esther se queda sola y rompe a llorar, hasta que escucha a Elisa correr hacia ella para preguntarle por qué llora. En ese instante se limpia el rostro, finge calma y pronuncia por primera vez una frase que las acompañará por años: “Por nada hija, tú sigue jugando, estaré bien”. Esa noche, junto a la cama de su hija dormida, Esther se permite llorar en susurros y se promete ser siempre fuerte y no volver a mostrarse vulnerable. Sin saberlo, deja sembrado en Elisa un vacío emocional que ella cargará hasta su vida adulta.",
+      "action": "Escuchar podcast",
+      "episodes": [
+        {
+          "id": "ep-1",
+          "number": 1,
+          "title": "La tensión",
+          "type": "youtube",
+          "youtubeId": "_Qfb3CZEx3U",
+          "url": "https://youtu.be/_Qfb3CZEx3U",
+          "image": "assets/podcast-ep-1.webp"
+        },
+        {
+          "id": "ep-2",
+          "number": 2,
+          "title": "La despedida",
+          "type": "youtube",
+          "youtubeId": "53lYozWhwqk",
+          "url": "https://youtu.be/53lYozWhwqk",
+          "image": "assets/podcast-ep-2.webp"
+        },
+        {
+          "id": "ep-3",
+          "number": 3,
+          "title": "El inicio",
+          "type": "youtube",
+          "youtubeId": "KY5vfdY8BxA",
+          "url": "https://youtu.be/KY5vfdY8BxA",
+          "image": "assets/podcast-ep-3.webp"
+        },
+        {
+          "id": "ep-4",
+          "number": 4,
+          "title": "La promesa",
+          "type": "youtube",
+          "youtubeId": "gLvBOfHRjVM",
+          "url": "https://youtu.be/gLvBOfHRjVM",
+          "image": "assets/podcast-ep-4.webp"
+        }
+      ]
+    },
+    {
+      "id": "corto",
+      "title": "Estaré bien",
+      "kind": "Cortometraje",
+      "status": "En rodaje",
+      "ready": false,
+      "room": "cuarto",
+      "object": "La lámpara",
+      "number": "06",
+      "image": "assets/cuarto.webp",
+      "type": "youtube",
+      "url": null,
+      "youtubeId": null,
+      "excerpt": "Elisa sostiene una versión de sí misma que ya no puede más. Algo tiene que cambiar.",
+      "synopsis": "Elisa, una joven diseñadora, acaba de ser ascendida a jefa de marketing y todo parece ir perfecto. Por eso responde ‘todo bien’ cada vez que alguien le pregunta cómo está, y llena sus días de trabajo, café y noches sin dormir para no sentir lo que pesa por dentro. Cuando su jefe le exige más de lo que está dispuesta a dar, Elisa se enfrenta por primera vez a un límite que no puede seguir ignorando. Con el mensaje de voz de su madre como única llamada que no puede seguir esquivando, tendrá que decidir si sigue sosteniendo una versión de sí misma que ya no puede más o si se permite dejar de estar bien.",
+      "action": "Ver cortometraje"
+    }
+  ],
+  "socials": {
+    "youtube": "https://www.youtube.com/@Ruway2025",
+    "upcoming": []
+  }
+}

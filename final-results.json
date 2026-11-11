@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "test": "390x844 social links and contact visible",
+      "pass": true
+    },
+    {
+      "test": "390x844 final menu story reachable",
+      "pass": true
+    },
+    {
+      "test": "320x667 social links and contact visible",
+      "pass": true
+    },
+    {
+      "test": "320x667 final menu story reachable",
+      "pass": true
+    },
+    {
+      "test": "844x390 social links and contact visible",
+      "pass": true
+    },
+    {
+      "test": "844x390 final menu story reachable",
+      "pass": true
+    },
+    {
+      "test": "arrow up moves viewpoint in house",
+      "pass": true
+    },
+    {
+      "test": "portrait bedroom lamp is immediately discoverable",
+      "pass": true
+    },
+    {
+      "test": "mobile 3D object opens correct story",
+      "pass": true
+    }
+  ]
+}

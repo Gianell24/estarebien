@@ -1,0 +1,6 @@
+import {createRequire} from 'node:module';import fs from 'node:fs/promises';const require=createRequire(new URL('./tools/package.json',import.meta.url));const {chromium}=require('playwright-core');const {startStaticServer}=await import('./tools/server.mjs');const server=await startStaticServer('site'),browser=await chromium.launch({channel:'chrome'}),base=`http://127.0.0.1:${server.address().port}/`;
+try{
+ const p=await browser.newPage({viewport:{width:1440,height:1000}});await p.goto(base);await p.waitForSelector('#tour-loading[hidden]',{state:'attached'});await p.waitForTimeout(750);
+ await p.addStyleTag({content:'.house-home>*:not(#three-stage){visibility:hidden!important}'});await p.screenshot({path:'review/v2/share-scene.png'});
+ const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),phone=await mobile.newPage();await phone.goto(base);await phone.waitForSelector('#tour-loading[hidden]',{state:'attached'});await phone.locator('.tour-top [data-contact]').click();await phone.locator('.contact-submit').scrollIntoViewIfNeeded();await phone.waitForTimeout(500);await phone.screenshot({path:'review/v2/contact-mobile-bottom.png'});console.log(JSON.stringify({mobileSubmitVisible:await phone.locator('.contact-submit').isVisible()}));
+}finally{await browser.close();await new Promise(r=>server.close(r));}

@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import {createRequire} from 'node:module';
+const require=createRequire(new URL('./tools/package.json',import.meta.url));
+const sharp=require('sharp');
+const path='site/content.json',c=JSON.parse(await fs.readFile(path,'utf8'));
+c.stories.find(s=>s.id==='podcast').synopsis='Esther no sabe que el día más doloroso de su vida también será el día que le enseñe a su hija cómo callar. Cuando la relación con el padre de Elisa llega a su fin, ambos se reúnen en un parque soleado mientras la pequeña juega entre las risas de otros niños. Allí, él anuncia con frialdad que esa será la última vez que las verá en persona y que, desde ahora, solo enviará la mensualidad por transferencia. Cuando se marcha, Esther se queda sola y rompe a llorar, hasta que escucha a Elisa correr hacia ella para preguntarle por qué llora. En ese instante se limpia el rostro, finge calma y pronuncia por primera vez una frase que las acompañará por años: “Por nada hija, tú sigue jugando, estaré bien”. Esa noche, junto a la cama de su hija dormida, Esther se permite llorar en susurros y se promete ser siempre fuerte y no volver a mostrarse vulnerable. Sin saberlo, deja sembrado en Elisa un vacío emocional que ella cargará hasta su vida adulta.';
+c.socials={youtube:c.youtube,upcoming:[]};
+await fs.writeFile(path,JSON.stringify(c,null,2)+'\n');
+const png=await fs.readFile('site/assets/ruway-logo.png');
+const meta=await sharp(png).metadata();
+const small=await sharp(png).resize(400).png().toBuffer();
+const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" rx="85" fill="#171d1b"/><image x="40" y="145" width="432" height="222" href="data:image/png;base64,${small.toString('base64')}"/></svg>`;
+await fs.writeFile('site/assets/ruway-mark.svg',svg);
+console.log(JSON.stringify({podcastUpdated:true,logo:{width:meta.width,height:meta.height,hasAlpha:meta.hasAlpha}}));

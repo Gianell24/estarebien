@@ -1,0 +1,4 @@
+Backend added to site/ (api/, admin/, data/, forms.js).
+Owner email: ruwayproducciones@gmail.com   From: ruwayproducciones@gmail.com
+INBOX_SETUP_CODE=AXDPC1FD   (the owner enters this once at /admin/ to choose their password)
+Add <script src="forms.js" defer></script> to every page with a form, and data-k-form="name" to each <form>.
