@@ -15,7 +15,7 @@ export class HouseAudio {
     await this.ctx.resume();this.next=this.ctx.currentTime+.06;
     this.setGain();if(!this.timer)this.timer=setInterval(()=>this.schedule(),80);
   }
-  setGain(){if(this.ctx&&this.master)this.master.gain.setTargetAtTime((this.enabled&&this.active&&!this.ducked&&!document.hidden)?0.45:0,this.ctx.currentTime,.2);}
+  setGain(){if(this.ctx&&this.master)this.master.gain.setTargetAtTime((this.enabled&&this.active&&!this.ducked&&!document.hidden)?0.50:0,this.ctx.currentTime,.2);}
   toggle(){this.enabled=!this.enabled;if(this.enabled&&this.active)this.start();else this.setGain();return this.enabled;}
   duck(value){this.ducked=value;this.setGain();}
   stop(){this.active=false;this.setGain();clearInterval(this.timer);this.timer=null;}
