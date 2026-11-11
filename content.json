@@ -33,11 +33,11 @@
       "object": "El libro",
       "number": "02",
       "image": "assets/sala.webp",
-      "type": "link",
+      "type": "flipbook",
       "url": "https://heyzine.com/flip-book/06a8170dd5.html",
       "excerpt": "Ramón intenta sostener a su familia mientras esconde lo que le está pasando.",
       "synopsis": "Ramón es un joven padre de familia que logra ascender de a poco en su vida, consiguiendo un empleo estable, una esposa amorosa y un hijo al que quiere mucho. Lamentablemente todos sus sueños se ven truncados al quedar desempleado por una crisis económica fuera de sus manos. Por ello, Ramón hará hasta lo imposible para salir adelante, haciéndolo a escondidas para evitar preocupar a sus familiares.",
-      "action": "Abrir versión actual"
+      "action": "Leer el libro"
     },
     {
       "id": "comic",
@@ -49,11 +49,11 @@
       "object": "El cuaderno",
       "number": "03",
       "image": "assets/cuarto.webp",
-      "type": "link",
+      "type": "flipbook",
       "url": "https://heyzine.com/flip-book/57d228110f.html",
       "excerpt": "Elisa descubre que ser necesaria para los demás no significa sentirse conocida.",
       "synopsis": "Elisa, por miedo a quedarse sola, ha aprendido a anteponer las necesidades de sus amigos a las suyas, tolerando actitudes que la lastiman con tal de conservar su compañía. Sin embargo, cuando comienza a darse cuenta de que sus amistades la valoran más por lo que puede ofrecerles que por quien realmente es, se enfrenta a una dolorosa realidad: nadie parece conocerla de verdad. A través de esta experiencia, Elisa deberá confrontar las inseguridades que la acompañan desde la infancia y comprender que no necesita ser indispensable para los demás para merecer afecto.",
-      "action": "Abrir versión actual"
+      "action": "Leer el cómic"
     },
     {
       "id": "instagram",
@@ -75,18 +75,56 @@
       "id": "podcast",
       "title": "Estaré bien",
       "kind": "Podcast",
-      "status": "Próximamente",
-      "ready": false,
+      "status": "4 episodios disponibles",
+      "ready": true,
       "room": "cocina",
       "object": "La radio",
       "number": "05",
-      "image": "assets/cocina.webp",
-      "type": "youtube",
+      "image": "assets/podcast-ep-1.webp",
+      "type": "series",
       "url": null,
       "youtubeId": null,
       "excerpt": "Antes de Elisa estuvo Esther. Y una frase que aprendió a decir demasiado pronto.",
       "synopsis": "Esther no sabe que el día más doloroso de su vida también será el día que le enseñe a su hija cómo callar. Cuando la relación con el padre de Elisa llega a su fin, ambos se reúnen en un parque soleado mientras la pequeña juega entre las risas de otros niños. Allí, él anuncia con frialdad que esa será la última vez que las verá en persona y que, desde ahora, solo enviará la mensualidad por transferencia. Cuando se marcha, Esther se queda sola y rompe a llorar, hasta que escucha a Elisa correr hacia ella para preguntarle por qué llora. En ese instante se limpia el rostro, finge calma y pronuncia por primera vez una frase que las acompañará por años: “Por nada hija, tú sigue jugando, estaré bien”. Esa noche, junto a la cama de su hija dormida, Esther se permite llorar en susurros y se promete ser siempre fuerte y no volver a mostrarse vulnerable. Sin saberlo, deja sembrado en Elisa un vacío emocional que ella cargará hasta su vida adulta.",
-      "action": "Escuchar podcast"
+      "action": "Escuchar podcast",
+      "episodes": [
+        {
+          "id": "ep-1",
+          "number": 1,
+          "title": "La tensión",
+          "type": "youtube",
+          "youtubeId": "_Qfb3CZEx3U",
+          "url": "https://youtu.be/_Qfb3CZEx3U",
+          "image": "assets/podcast-ep-1.webp"
+        },
+        {
+          "id": "ep-2",
+          "number": 2,
+          "title": "La despedida",
+          "type": "youtube",
+          "youtubeId": "53lYozWhwqk",
+          "url": "https://youtu.be/53lYozWhwqk",
+          "image": "assets/podcast-ep-2.webp"
+        },
+        {
+          "id": "ep-3",
+          "number": 3,
+          "title": "El inicio",
+          "type": "youtube",
+          "youtubeId": "KY5vfdY8BxA",
+          "url": "https://youtu.be/KY5vfdY8BxA",
+          "image": "assets/podcast-ep-3.webp"
+        },
+        {
+          "id": "ep-4",
+          "number": 4,
+          "title": "La promesa",
+          "type": "youtube",
+          "youtubeId": "gLvBOfHRjVM",
+          "url": "https://youtu.be/gLvBOfHRjVM",
+          "image": "assets/podcast-ep-4.webp"
+        }
+      ]
     },
     {
       "id": "corto",
